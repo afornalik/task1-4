@@ -35,20 +35,21 @@ public class CardDeck {
             i += (numberOfPlayers - 1);
         }
     }
-     private static class Card {
 
-            private final Color color;
-            private final Type type;
+    private static class Card {
 
-            private Card(Color color, Type type) {
-                this.color = color;
-                this.type = type;
-            }
+        private final Color color;
+        private final Type type;
 
-            private String showCard() {
-                return String.format("|%4s%10s|", color.mark, type);
-            }
+        private Card(Color color, Type type) {
+            this.color = color;
+            this.type = type;
         }
+
+        private String showCard() {
+            return String.format("|%4s%10s|", color.mark, type);
+        }
+    }
 
     private enum Color {
         CLUBS("\u2663"),
