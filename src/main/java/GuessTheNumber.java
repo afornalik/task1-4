@@ -23,6 +23,7 @@ public class GuessTheNumber {
                 }
             }catch (InputMismatchException e){
                 System.out.println("\t only numbers !");
+                scanner.next();
             }
         }while(lookedNumber != number );
         System.out.println("Congratulations you guessed the number !");
